@@ -1,1 +1,5 @@
-{{ content }}
+{% include header.html %}
+
+{{ content | markdownify}}
+
+{% include footer.html %}

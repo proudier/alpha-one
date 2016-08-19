@@ -1,0 +1,29 @@
+        <div style="margin:80px" ></div>
+
+        <div class="page-footer">
+            <div class="row">
+                <div class="col-md-1" ></div>
+                <div class="col-md-7" >
+                    <b>{{ site.title | escape }}</b>
+                    <p>{{ site.description | escape }}</p>
+                    <small>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and the <a href="https://pierreroudier.net/projects/alpha-one">Alpha-One</a> theme.</small>
+                </div>
+                <div class="col-md-4">
+                    <b>Links</b>
+                    <ul class="list-unstyled">
+                        {% if site.github_username.size > 0 %}
+                            <li><a class="grey-text text-lighten-3" href="https://github.com/{{site.github_username}}/">GitHub <i class="fa fa-github"></i></a></li>
+                        {% endif %}
+                        {% if site.linkedin_username.size > 0 %}
+                            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/{{site.linkedin_username}}">LinkedIn <i class="fa fa-linkedin"></i></a></li>
+                        {% endif %}
+                        {% if site.twitter_username.size > 0 %}
+                            <li><a class="grey-text text-lighten-3" href="https://twitter.com/{{site.twitter_username}}">Twitter <i class="fa fa-twitter"></i></a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

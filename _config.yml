@@ -8,6 +8,9 @@ twitter_username: proudier
 github_username:  proudier
 linkedin_username: pierreroudier
 
+aboutme_page: about
+
 markdown: kramdown
 
 theme: alpha-one
+#gems: [ reading_time, pluralize ]

@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.title | escape }}</title>
+    <meta name="description" content="Pierre Roudier's personnal website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Slabo+27px|Titillium+Web|Work+Sans:200,400'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+    <link rel="stylesheet" href="{{ "alpha-one.css" | prepend: site.baseurl }}">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation" id="top-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a target="_top" href="{{ site.baseurl }}" class="navbar-brand">{{ site.title | escape }}</a>
+            </div>
+            <div class="collapse navbar-collapse"  id="example">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    <li>
+                        <a href="articles.html" data-scroll="true" data-id="#blog">Articles</a>
+                    </li>
+                    <li>
+                        <a href="" data-scroll="true" data-id="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="" data-scroll="true" data-id="#aboutMe">About Me</a>
+                    </li>
+{% comment %}
+                    {% if site.linkedin_username.size > 0 %}
+                    <li>
+                        <a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.github_username.size > 0 %}
+                    <li>
+                        <a href="https://github.com/{{site.github_username}}/" target="_blank">
+                            <i class="fa fa-github-square"></i>
+                        </a>
+                    </li>                    
+                    {% endif %}
+                    {% if site.twitter_username.size > 0 %}
+                    <li>
+                        <a href="https://twitter.com/{{site.twitter_username}}" target="_blank">
+                            <i class="fa fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    {% endif %}
+{% endcomment %}                    
+                </ul>
+            </div>
+        </div>
+     </nav>
+
+     <div class="container">

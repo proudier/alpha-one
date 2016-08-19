@@ -1,112 +1,25 @@
-<!doctype html>
+{% include header.html %}
 
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<div class="page-header">
+    <h1>{{ page.title | escape }}</h1>
+    <ul class="list-inline">
+        <li><small>{{ page.date | date: "%b %-d, %Y" }}.</small></li>
+        {% if page.tags.size > 0 %}
+            <li>
+                <small>Tags: </small>
+                {% for tag in page.tags %}
+                    <span class="badge">{{ tag | escape }}</span> 
+                {% endfor %}
+            </li>
+        {% endif %}
+    </ul> 
+</div>
 
-<head>
-    <meta charset="utf-8">
-    <title>{{ site.title | escape }}</title>
-    <meta name="description" content="Pierre Roudier's personnal website">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Slabo+27px|Titillium+Web|Work+Sans:200,400'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="alpha-one.css">
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
+<div style="margin:40px" ></div>
 
-<body>
-    <nav class="navbar navbar-default" role="navigation" id="top-navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button id="menu-toggle" type="button" class="navbar-toggle" >
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar bar1"></span>
-                    <span class="icon-bar bar2"></span>
-                    <span class="icon-bar bar3"></span>
-                </button>
-                <a target="_top" href="{{ site.baseurl }}" class="navbar-brand">{{ site.title | escape }}</a>
-            </div>
-            <div class="collapse navbar-collapse"  id="example">
-                <ul class="nav navbar-nav navbar-right navbar-uppercase">
-                    <li>
-                        <a href="" data-scroll="true" data-id="#blog">Articles</a>
-                    </li>
-                    <li>
-                        <a href="" data-scroll="true" data-id="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="" data-scroll="true" data-id="#aboutMe">About Me</a>
-                    </li>
+<div class="content"> 
+    {{ content | markdownify}}
+</div>
 
-                    <li>
-                        <a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank">
-                            <i class="fa fa-linkedin-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/{{site.github_username}}/" target="_blank">
-                            <i class="fa fa-github-square"></i>
-                        </a>
-                    </li>                    
-                    <li>
-                        <a href="https://twitter.com/{{site.twitter_username}}" target="_blank">
-                            <i class="fa fa-twitter-square"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-     </nav>
-
-    <div class="container">
-        <div class="page-header">
-
-            <h1>{{ page.title | escape }}</h1>
-            <ul class="list-inline">
-                <li><small>{{ page.date | date: "%b %-d, %Y" }}.</small></li>
-                <li>
-                    <small>Tags: </small>
-                    {% for tag in page.tags %}
-                        <span class="badge">{{ tag | escape }}</span> 
-                    {% endfor %}
-                </li>
-            </ul> 
-        </div>
-        
-        
-        <div style="margin:40px" ></div>
-
-        <div class="content"> 
-            {{ content | markdownify}}
-        </div>
-
-        <div style="margin:80px" ></div>
-
-        <div class="page-footer">
-            <div class="row">
-                <div class="col-md-8">
-                    <b>{{ site.title | escape }}</b>
-                    <p>{{ site.description | escape }}</p>
-                    <small>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and the <a href="https://pierreroudier.net/projects/alpha-one">Alpha-One</a> theme.</small>
-                </div>
-                <div class="col-md-4">
-                    <b>Links</b>
-                    <ul class="list-unstyled">
-                        <li><a class="grey-text text-lighten-3" href="https://github.com/{{site.github_username}}/">GitHub <i class="fa fa-github"></i></a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/{{site.linkedin_username}}">LinkedIn <i class="fa fa-linkedin"></i></a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/{{site.twitter_username}}">Twitter <i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+{% include footer.html %}
