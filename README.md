@@ -1,6 +1,6 @@
 # Alpha-One
 
-Alpha-One is the Jekyll theme behind my personnal website.
+A Jekyl theme based on Bootstrap.
 
 
 ## Installation
