@@ -1,6 +1,6 @@
-# Alpha-one
+# Alpha-One
 
-Alpha-One is a Jekyll theme I created for my website
+Alpha-One is the Jekyll theme behind my personnal website.
 
 
 ## Installation
@@ -31,7 +31,7 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/proudier/alpha-one
+Bug reports and pull requests are welcome on [GitHub](https://github.com/proudier/alpha-one).
 
 ## License
 
