@@ -1,0 +1,23 @@
+body {
+    font-family: 'Titillium Web';
+    font-size: 1.6em;
+}
+
+nav {
+    margin-bottom: 80px;
+}
+
+footer.page-footer {
+    font-family: 'Titillium Web';
+    margin-top: 80px;
+}
+
+h1 {
+    font-family: 'Work sans'; 
+    font-weight: 400;
+}
+
+.content > * {
+    font-size: 1.1em;
+    font-family: 'Slabo 27px';
+}

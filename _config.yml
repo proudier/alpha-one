@@ -1,0 +1,13 @@
+title: "Pierre Roudier's website"
+description: "Linux Environments and Java Technologies"
+footer_text: "Powerered by Jeykil. Hosted by OVH."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.pierreroudier.net" 
+
+twitter_username: proudier
+github_username:  proudier
+linkedin_username: pierreroudier
+
+markdown: kramdown
+
+theme: alpha-one
