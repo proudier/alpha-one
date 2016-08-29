@@ -10,7 +10,7 @@ In your familiar with XML files, you’ve probably heard of/used [XPath](https:/
 
 First, a good yet concise presentation is available on [Stefan Goessner’s blog](http://goessner.net/articles/JsonPath/). It gives you background, defines the syntax and comes with many examples. A JavaScript implementation is also available but it seems unmaintained.
 
-Subbu Allamaraju forked this implementatio, modernized and improved to an extend unknown to me. Nevertheless I’ve decided to use it in my project as it is actively maintained. It’s available [on GitHub](https://github.com/s3u/JSONPath). Looking at [the test files] (https://github.com/s3u/JSONPath/blob/master/test/test.examples.js) is a good source of “in-situation” examples.
+Subbu Allamaraju forked this implementatio, modernized and improved to an extend unknown to me. Nevertheless I’ve decided to use it in my project as it is actively maintained. It’s available [on GitHub](https://github.com/s3u/JSONPath). Looking at [the test files](https://github.com/s3u/JSONPath/blob/master/test/test.examples.js) is a good source of “in-situation” examples.
 
 To test the queries, an online JSONPath evaluator is a convenient tool. I find [jsonpath.com](http://jsonpath.com/) to be the best. You can paste your JSON content and your JSONPath expression and it will immediately show you the matching content.
 
