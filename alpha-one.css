@@ -21,3 +21,11 @@ h1 {
     font-size: 1.1em;
     font-family: 'Slabo 27px';
 }
+
+a {
+    transition: color 0.25s ease;
+}
+a:hover, a:focus {
+    color: #6dd4b1;
+    text-decoration: none;
+}
