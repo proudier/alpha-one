@@ -5,8 +5,8 @@
     <ul class="list-inline">
         <li><small>{{ page.date | date: "%b %-d, %Y" }}.</small></li>
         {% if page.tags.size > 0 %}
+            <div style="margin-right: 5px; display: inline" ></div>
             <li>
-                <small>Tags: </small>
                 {% for tag in page.tags %}
                     <span class="badge">{{ tag | escape }}</span> 
                 {% endfor %}
