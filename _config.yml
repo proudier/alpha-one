@@ -1,6 +1,6 @@
 title: "Alpha-One Demo Site"
-motto: "Enter any 11-digit prime number to continue"
-footer: 'Powered by <a href="https://jekyllrb.com/">Jekyll</a> and the <a href="https://pierreroudier.net/projects/alpha-one">Alpha-One</a> theme.'
+motto: "Enter any 11-digit prime number to continue."
+footer: 'Powered by <a href="https://jekyllrb.com/">Jekyll</a> and the <a href="https://github.com/proudier/alpha-one">Alpha-One</a> theme.'
 
 url: "example.net" 
 baseurl: "/"
