@@ -2,6 +2,20 @@
 
 A Jekyl theme based on Bootstrap.
 
+## Features 
+
+- Resposive layout
+- Syntax highlighting
+- Social links (IN PROGRESS)
+
+TODO: 
+- Tags listing page
+- Categories listing page
+- Google Analytics integration
+
+### Layouts
+
+Alpha-One offers a default layout and a post layout. The page layout is a redirection to the default layout.
 
 ## Installation
 
@@ -25,9 +39,22 @@ Or install it yourself as:
 
     $ gem install alpha-one
 
-## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+## Configuration
+
+The following variable can be set in _config.yml
+- title: text shown in the navbar and the footer.
+- motto: a maxim shown in the footer, under the title.
+- footer (optinal): some text shown at the bottom of the footer
+- twitter_username
+- github_username  
+- linkedin_username
+
+## A note on table
+
+To prettify your tables, use kramdown and add
+`{: class="table table-striped"}`
+right bellow the table in the markdown file
 
 ## Contributing
 

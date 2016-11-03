@@ -8,7 +8,7 @@ layout: page
 
 <div style="margin: 40px" ></div>
 
-<ul>
+<ul class="list-unstyled">
   {% for post in site.posts %}
     <li>
         <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a> 
@@ -21,7 +21,7 @@ layout: page
                     <span class="badge">{{ tag | escape }}</span> 
                 {% endfor %}
         {% endif %}
-        <div style="margin-bottom: 30px" ></div>
+        <div style="margin-bottom: 40px" ></div>
     </li>
   {% endfor %}
 </ul>

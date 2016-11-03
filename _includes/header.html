@@ -4,7 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ site.title | escape }}</title>
+    <title>
+        {% if page.title.size > 0 %}
+            {{ page.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
     <meta name="description" content="Pierre Roudier's personnal website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -17,7 +23,7 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> -->
 </head>
 
 <body>
@@ -30,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.baseurl }}" >{{ site.title | escape }}</a>
+                <a class="navbar-brand" href="{{ site.baseurl }}" >{{ site.title }}</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">

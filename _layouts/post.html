@@ -1,18 +1,16 @@
 {% include header.html %}
 
-<div class="page-header">
-    <h1>{{ page.title | escape }}</h1>
-    <ul class="list-inline">
-        <li><small>{{ page.date | date: "%b %-d, %Y" }}.</small></li>
+<div class="page-header text-center">
+    <h1>{{ page.title }}</h1>
+    <p class="text-center">
+        <strong>Published: </strong> {{ page.date | date: "%b %-d, %Y" }}
         {% if page.tags.size > 0 %}
-            <div style="margin-right: 5px; display: inline" ></div>
-            <li>
+            <strong>· Tags: </strong>
                 {% for tag in page.tags %}
-                    <span class="badge">{{ tag | escape }}</span> 
+                    {{ tag }}
                 {% endfor %}
-            </li>
         {% endif %}
-    </ul> 
+    </p>
 </div>
 
 

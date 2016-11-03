@@ -4,9 +4,11 @@
             <div class="row">
                 <div class="col-md-1" ></div>
                 <div class="col-md-7" >
-                    <b>{{ site.title | escape }}</b>
-                    <p>{{ site.description | escape }}</p>
-                    <small>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and the <a href="https://pierreroudier.net/projects/alpha-one">Alpha-One</a> theme.</small>
+                    <b>{{ site.title }}</b>
+                    <p>{{ site.motto }}</p>
+                    {% if site.footer.size > 0 %}
+                        <small>{{ site.footer }}</small>
+                    {% endif %}
                 </div>
                 <div class="col-md-4">
                     <b>Links</b>
