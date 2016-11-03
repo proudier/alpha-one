@@ -3,13 +3,16 @@ motto: "Enter any 11-digit prime number to continue."
 footer: 'Powered by <a href="https://jekyllrb.com/">Jekyll</a> and the <a href="https://github.com/proudier/alpha-one">Alpha-One</a> theme.'
 
 url: "example.net" 
-baseurl: "/"
+baseurl: ""
 
 twitter_username: proudier
 github_username:  proudier
 linkedin_username: pierreroudier
 
-aboutme_page: about
+header_link_1_label: Posts
+header_link_1_href: posts.html
+#header_link_2_label: Projects
+#header_link_2_href: projects.html
 
 markdown: kramdown
 

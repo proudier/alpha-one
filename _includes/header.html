@@ -17,13 +17,15 @@
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Slabo+27px|Titillium+Web|Work+Sans:200,400'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
-    <link rel="stylesheet" href="{{ "alpha-one.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "alpha-one.css" | relative_url }}">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> -->
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+{% comment %}
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | absolute_url }}">
+{% endcomment %} 
 </head>
 
 <body>
@@ -36,19 +38,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.baseurl }}" >{{ site.title }}</a>
+                <a class="navbar-brand" href="{{ site.baseurl }}/" >{{ site.title }}</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="{{ "posts.html" | prepend: site.baseurl }}" >Posts</a>
-                    </li>
-                    <li>
-                        <a href="">Projects</a>
-                    </li>
-                    <li>
-                        <a href="">About Me</a>
-                    </li>
+                    {% if site.header_link_1_label.size > 0 %}
+                        <li>
+                            <a href="{{ site.header_link_1_href | relative_url }}"> {{ site.header_link_1_label }} </a>
+                        </li>
+                    {% endif %}
+                    {% if site.header_link_2_label.size > 0 %}
+                        <li>
+                            <a href="{{ site.header_link_2_href | relative_url }}"> {{ site.header_link_2_label }} </a>
+                        </li>
+                    {% endif %}
 {% comment %}
                     {% if site.linkedin_username.size > 0 %}
                     <li>
