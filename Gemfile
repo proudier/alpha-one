@@ -1,3 +1,2 @@
-source "https://rubygems.org" do
-	gemspec
-end
+source 'https://rubygems.org'
+gem 'jekyll', '>=3.3'
