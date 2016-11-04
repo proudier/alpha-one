@@ -25,7 +25,7 @@ Add this line to your Jekyll site's Gemfile:
 gem "alpha-one"
 ```
 
-And add this line to your Jekyll site:
+And add this line to your Jekyll site (_config.yml):
 
 ```yaml
 theme: alpha-one
@@ -42,13 +42,17 @@ Or install it yourself as:
 
 ## Configuration
 
-The following variable can be set in _config.yml
-- title: text shown in the navbar and the footer.
-- motto: a maxim shown in the footer, under the title.
-- footer (optinal): some text shown at the bottom of the footer
+The following variable can/must be set in _config.yml
+- title: text shown in the navbar and the footer
+- motto: a maxim shown in the footer, under the title
+- footer (optional): some text shown at the bottom of the footer
+- header_link_1_label, header_link_1_href (both optional): used to add links in the header bar
 - twitter_username
 - github_username  
 - linkedin_username
+- baseurl (optional): path to the root of your website; useful if it is hosted on a subpath
+- png_favicon: name of the png file to be used as favicon; must reside bellow $baseurl
+
 
 ## A note on table
 
