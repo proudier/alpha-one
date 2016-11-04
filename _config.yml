@@ -14,5 +14,10 @@ header_link_1_href: posts.html
 #header_link_2_label: Projects
 #header_link_2_href: projects.html
 
+png_icon: favicon.png
+
 markdown: kramdown
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
