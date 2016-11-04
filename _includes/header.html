@@ -23,7 +23,7 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 {% if site.png_icon.size > 0 %}
-    <link rel="icon" type="image/png" href="{{ site.png_icon }}">
+    <link rel="icon" type="image/png" href="{{ site.png_icon | absolute_url }}">
 {% endif %}
     <link rel="canonical" href="{{ page.url | absolute_url }}">
 {% comment %}
