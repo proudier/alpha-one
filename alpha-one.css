@@ -1,34 +1,61 @@
 body {
     font-family: 'Titillium Web';
     font-size: 1.6em;
+    margin: 0px;
+    background-image: url("wild_oliva.png");   
+    background-attachment: fixed; 
 }
 
 nav {
-    margin-bottom: 80px;
+    background-image: url("blackmamba.png");
+    background-attachment: fixed;
 }
 
-footer.page-footer {
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar-default {
+    margin: 0px;
+    border: 0px;
+}
+
+.navbar-default .navbar-brand {
+    color: #dddddd;
+}
+
+
+.subtitle {
     font-family: 'Titillium Web';
-    margin-top: 80px;
 }
 
-h1 {
-/*    font-family: 'Work sans'; */
-    font-weight: 400;
+article > * {
+    font-family: 'Merriweather';
 }
 
-.content > * {
-    font-size: 1.1em;
-    font-family: 'Slabo 27px';
+article {
+    padding-top: 50px;
+    padding-bottom: 100px; 
+    background-image: url("grey.png");
+    box-shadow: inset 0px 5px 15px 0px rgba(0,0,0,0.5);
+}
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #dddddd;
+    box-shadow: inset 0px 5px 15px 0px rgba(0,0,0,0.5);
 }
 
 a {
     transition: color 0.25s ease;
 }
+
 a:hover, a:focus {
     color: #6dd4b1;
     text-decoration: none;
 }
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lorem ipsum"
+title:  "Lorem ipsum but with a very very very long title because I like it this way"
 tags:
 - lorem
 - ipsum

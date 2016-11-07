@@ -1,16 +1,16 @@
-        <div style="margin:80px" ></div>
-
-        <div class="page-footer">
+    <footer>
+        <div class="container">
             <div class="row">
                 <div class="col-md-1" ></div>
-                <div class="col-md-7" >
+                <div class="col-md-8" >
                     <b>{{ site.title }}</b>
                     <p>{{ site.motto }}</p>
+                    <p>&nbsp;</p>
                     {% if site.footer.size > 0 %}
                         <small>{{ site.footer }}</small>
                     {% endif %}
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <b>Links</b>
                     <ul class="list-unstyled">
                         {% if site.github_username.size > 0 %}
@@ -26,6 +26,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
