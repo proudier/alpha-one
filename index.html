@@ -2,13 +2,15 @@
 layout: page
 ---
 
-<h1>Welcome to my blog</h1>
+<div class="page-header">
+    <h1>Welcome to my blog</h1>
+</div>
 
+<div style="margin: 40px" ></div>
 
-
-<h2>Posts</h2>
+<h2>Latests posts</h2>
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:3 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       {{ post.excerpt }}

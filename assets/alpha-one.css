@@ -2,17 +2,13 @@ body {
     font-family: 'Titillium Web';
     font-size: 1.6em;
     margin: 0px;
-    background-image: url("wild_oliva.png");   
+    background-image: url("wild_oliva.png");
     background-attachment: fixed; 
-}
-
-nav {
-    background-image: url("blackmamba.png");
-    background-attachment: fixed;
 }
 
 .navbar {
     border-radius: 0px;
+    background-color: #BB6688;
 }
 
 .navbar-default {
@@ -21,9 +17,8 @@ nav {
 }
 
 .navbar-default .navbar-brand {
-    color: #dddddd;
+    color: #eeeeee;
 }
-
 
 .subtitle {
     font-family: 'Titillium Web';
@@ -36,7 +31,7 @@ article > * {
 article {
     padding-top: 50px;
     padding-bottom: 100px; 
-    background-image: url("grey.png");
+    background-color: white;
     box-shadow: inset 0px 5px 15px 0px rgba(0,0,0,0.5);
 }
 

@@ -45,7 +45,6 @@ Or install it yourself as:
 The following variable can/must be set in _config.yml
 - title: text shown in the navbar and the footer
 - motto: a maxim shown in the footer, under the title
-- footer (optional): some text shown at the bottom of the footer
 - header_link_1_label, header_link_1_href (both optional): used to add links in the header bar
 - twitter_username
 - github_username  
