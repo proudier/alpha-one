@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "alpha-one"
-  spec.version       = "0.2.4"
+  spec.version       = "0.3.0"
   spec.authors       = ["Pierre ROUDIER"]
-  spec.email         = ["contact@pierreroudier.net"]
+  spec.email         = ["pierre@roudier.io"]
 
   spec.summary       = %q{The Jekyll theme styling my personal website}
   spec.homepage      = "https://github.com/proudier/alpha-one"

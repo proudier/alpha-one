@@ -106,6 +106,10 @@ table.table.table-striped, div .highlighter-rouge {
     text-align: center;
 }
 
+img {
+    display: block;
+    margin: 20px auto;
+}
 
 /* From default.css found at https://richleland.github.io/pygments-css/ */
 .highlight .hll { background-color: #ffffcc }

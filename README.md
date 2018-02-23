@@ -39,6 +39,9 @@ Or install it yourself as:
 
     $ gem install alpha-one
 
+Maybe you will be interested in copying the following files from the sample website to your site:
+- favicon.png
+- posts.html
 
 ## Configuration
 
