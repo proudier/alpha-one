@@ -99,11 +99,7 @@ table.table.table-striped {
 .navigation {
     margin-top: 100px;
 }
-.navigation .prev {
-    display: inline;
-}
 .navigation .next {
-    float: right;
     text-align: right;
 }
 .navigation .top {
