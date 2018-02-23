@@ -46,7 +46,7 @@ nav.navbar.navbar-default {
 
 article {
     padding-top: 50px;
-    padding-bottom: 100px; 
+    padding-bottom: 80px;
     background-color: white;
 }
 
@@ -76,7 +76,39 @@ h1 {
     margin-bottom: 20px;
 }
 
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table.table.table-striped {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navigation {
+    margin-top: 100px;
+}
+.navigation .prev {
+    display: inline;
+}
+.navigation .next {
+    float: right;
+    text-align: right;
+}
+.navigation .top {
+    text-align: center;
+}
 
 /* Based on https://richleland.github.io/pygments-css/ */
 .highlight { background-color: #ffffff }
