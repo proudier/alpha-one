@@ -1,38 +1,58 @@
 body {
     font-family: 'Titillium Web';
     font-size: 1.6em;
-    margin: 0px;
-    background-image: url("wild_oliva.png");
-    background-attachment: fixed; 
+    margin-top: 0px;
+    background: url("wild_oliva.png") fixed;
 }
 
-.navbar {
-    border-radius: 0px;
-    background-color: #BB6688;
-}
-
-.navbar-default {
+nav.navbar.navbar-default {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    background: url("blue.png") fixed;
     margin: 0px;
     border: 0px;
 }
 
 .navbar-default .navbar-brand {
-    color: #eeeeee;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #dddddd;
+    font-size: 1.2em;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #dddddd;
+    text-shadow: 0px 0px 1px #dddddd;
+}
+
+.navbar-default .navbar-brand~a:hover, .navbar-default .navbar-brand~a:focus {
+    color: white;
+    text-shadow: 0px 0px 1px #dddddd;
+}
+
+.navbar-default .navbar-nav>li>a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #dddddd;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: white;
+    text-shadow: 0px 0px 1px #dddddd;
 }
 
 .subtitle {
     font-family: 'Titillium Web';
 }
 
-article > * {
-    font-family: 'Merriweather';
-}
-
 article {
     padding-top: 50px;
     padding-bottom: 100px; 
     background-color: white;
-    box-shadow: inset 0px 5px 15px 0px rgba(0,0,0,0.5);
+}
+
+article > * {
+    font-family: 'Merriweather';
+    line-height: 150%;
 }
 
 footer {
@@ -51,6 +71,10 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
+h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 
 
 

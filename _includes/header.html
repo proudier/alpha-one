@@ -19,14 +19,14 @@
     <!-- JS and CSS are fetch now to prevent FOUC -->
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Merriweather|Titillium+Web'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ "assets/alpha-one.css" | relative_url }}">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 {% if site.png_icon.size > 0 %}
-    <link rel="icon" type="image/png" href="{{ site.png_icon | absolute_url }}">
+    <link rel="icon" type="image/png" href="{{ site.favicon_png | absolute_url }}">
 {% endif %}
     <link rel="canonical" href="{{ page.url | absolute_url }}">
 {% comment %}
@@ -36,7 +36,7 @@
 
 <body>
     <nav class="navbar navbar-default">
-<!--         <div class="container"> -->
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -83,5 +83,5 @@
 {% endcomment %}                    
                 </ul>
             </div>
-<!--         </div> -->
+        </div>
     </nav>
