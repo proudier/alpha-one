@@ -1,12 +1,13 @@
 # Alpha-One
 
-A Jekyl theme based on Bootstrap.
+A Jekyll theme designed for enhanced readability of (long) blog posts.
 
 ## Features 
 
-- Resposive layout
+- Responsive layout (based on Bootstrap)
 - Syntax highlighting
 - Social links (IN PROGRESS)
+- Gem-based (ie. easy updates!)
 
 TODO: 
 - Tags listing page
@@ -15,7 +16,7 @@ TODO:
 
 ### Layouts
 
-Alpha-One offers a default layout and a post layout. The page layout is a redirection to the default layout.
+Alpha-One offers a `default` layout and a `post` layout. The `page` layout is a redirection to the `default` layout.
 
 ## Installation
 
@@ -35,25 +36,22 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install alpha-one
-
 Maybe you will be interested in copying the following files from the sample website to your site:
 - favicon.png
 - posts.html
 
 ## Configuration
 
-The following variable can/must be set in _config.yml
+The following variable can/must be set in `_config.yml`:
 - title: text shown in the navbar and the footer
 - motto: a maxim shown in the footer, under the title
-- header_link_1_label, header_link_1_href (both optional): used to add links in the header bar
+- description: used by search engine
 - twitter_username
 - github_username  
 - linkedin_username
 - baseurl (optional): path to the root of your website; useful if it is hosted on a subpath
 - png_favicon: name of the png file to be used as favicon; must reside bellow $baseurl
+- header_link_1_label, header_link_1_href (both optional): used to add links in the navbar
 
 
 ## A note on table
