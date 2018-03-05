@@ -1,6 +1,7 @@
 title: "Alpha-One Demo Site"
 description: "A responsive theme for Jekyll"
 motto: "Enter any 11-digit prime number to continue."
+author: "Pierre Roudier"
 
 url: "example.net" 
 baseurl: ""
