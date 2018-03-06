@@ -20,6 +20,11 @@ Alpha-One offers a `default` layout and a `post` layout. The `page` layout is a 
 
 ## Installation
 
+If not done already, init a new jekyll site:
+```
+bundler exec jekyll new TODOO
+```
+
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
@@ -32,7 +37,9 @@ And add this line to your Jekyll site (_config.yml):
 theme: alpha-one
 ```
 
-And then execute:
+Create a sample index.html page. You may want to copy the one from the demo-site to get you started quickly
+
+Then execute:
 
     $ bundle
 
@@ -46,12 +53,14 @@ The following variable can/must be set in `_config.yml`:
 - title: text shown in the navbar and the footer
 - motto: a maxim shown in the footer, under the title
 - description: used by search engine
-- twitter_username
-- github_username  
-- linkedin_username
+- author (optional): used to add a meta author in the header
+- twitter_username (optional)
+- github_username (optional)
+- linkedin_username (optional)
 - baseurl (optional): path to the root of your website; useful if it is hosted on a subpath
 - png_favicon: name of the png file to be used as favicon; must reside bellow $baseurl
 - header_link_1_label, header_link_1_href (both optional): used to add links in the navbar
+
 
 
 ## A note on table
@@ -59,6 +68,10 @@ The following variable can/must be set in `_config.yml`:
 To prettify your tables, use kramdown and add
 `{: class="table table-striped"}`
 right bellow the table in the markdown file
+
+## About pagination
+
+Pagination is not handled by the theme. See [Jekyll's doc page on pagination](https://jekyllrb.com/docs/pagination/)
 
 ## Contributing
 
