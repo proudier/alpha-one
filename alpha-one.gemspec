@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "alpha-one"
-  spec.version       = "0.3.3"
+  spec.version       = "0.3.4"
   spec.authors       = ["Pierre ROUDIER"]
   spec.email         = ["pierre@roudier.io"]
 
