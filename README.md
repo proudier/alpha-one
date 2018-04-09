@@ -2,6 +2,8 @@
 
 A Jekyll theme designed for enhanced readability of (long) blog posts.
 
+![alt text](preview.png "Alpha-One preview")
+
 ## Features 
 
 - Responsive layout (based on Bootstrap)
