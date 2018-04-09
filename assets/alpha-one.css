@@ -2,7 +2,6 @@ body {
     font-family: 'Titillium Web';
     font-size: 1.6em;
     margin-top: 0px;
-    background: url("wild_oliva.png") fixed;
 }
 
 nav.navbar.navbar-default {
@@ -60,6 +59,7 @@ footer {
     padding-bottom: 60px;
     color: #dddddd;
     box-shadow: inset 0px 5px 15px 0px rgba(0,0,0,0.5);
+    background: url("wild_oliva.png") fixed;
 }
 
 a {
