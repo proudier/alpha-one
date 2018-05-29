@@ -4,15 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>
-        {% if page.title.size > 0 %}
-            {{ page.title }}
-        {% else %}
-            {{ site.title }}
-        {% endif %}
-    </title>
-    {% if site.description.size > 0 %}
-    <meta name="description" content="{{ site.description }}">
+    {% if page.title.size > 0 %}
+        <title>{{ page.title }}</title>
+    {% else %}
+        <title>{{ site.title }}</title>
+    {% endif %}
+    {% if page.excerpt.size > 0 %}
+        <meta name="description" content="{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html | truncate: 160 | strip }}">
+    {% else %}
+        <meta name="description" content="{{ site.description  | strip }}">
     {% endif %}
     {% if site.author.size > 0 %}
     <meta name="author" content="{{ site.author }}">

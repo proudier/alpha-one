@@ -4,50 +4,50 @@ A Jekyll theme designed for enhanced readability of (long) blog posts.
 
 ![alt text](preview.png "Alpha-One preview")
 
-## Features 
 
-- Responsive layout (based on Bootstrap)
-- Syntax highlighting
-- Social links (IN PROGRESS)
+
+## Features
+
+- Responsive layout (based on Bootstrap 3)
+- Social links
+- Syntax highlighting with embedded pygments-css
 - Gem-based (ie. easy updates!)
-
-TODO: 
-- Tags listing page
-- Categories listing page
-- Google Analytics integration
 
 ### Layouts
 
 Alpha-One offers a `default` layout and a `post` layout. The `page` layout is a redirection to the `default` layout.
 
+### TODO
+
+- Tags listing page
+- Categories listing page
+- Google Analytics integration
+
+
 ## Installation
 
-If not done already, init a new jekyll site:
-```
-bundler exec jekyll new TODOO
-```
+### For experienced users
 
-Add this line to your Jekyll site's Gemfile:
-
+Add to Gemfile:
 ```ruby
 gem "alpha-one"
 ```
 
-And add this line to your Jekyll site (_config.yml):
-
+Add to _config.yml __
 ```yaml
 theme: alpha-one
 ```
 
-Create a sample index.html page. You may want to copy the one from the demo-site to get you started quickly
+See the configuration section bellow for mandatory and extra settings.
+Create an index.html file; you may wish to copy the one from the demo site to get started quickly.
 
-Then execute:
+### For Jekyll newcomers
 
-    $ bundle
+See how to install Jekyll [on the official website](https://jekyllrb.com/docs/installation/).
+Follow the [quick start guide](https://jekyllrb.com/docs/quickstart/)
+Now you should be ready to follow the abode 'For experienced users' section ;)
 
-Maybe you will be interested in copying the following files from the sample website to your site:
-- favicon.png
-- posts.html
+
 
 ## Configuration
 
@@ -71,9 +71,11 @@ To prettify your tables, use kramdown and add
 `{: class="table table-striped"}`
 right bellow the table in the markdown file
 
+
+
 ## About pagination
 
-Pagination is not handled by the theme. See [Jekyll's doc page on pagination](https://jekyllrb.com/docs/pagination/)
+Pagination is not handled by the theme. See [Jekyll's doc page on pagination](https://jekyllrb.com/docs/pagination/).
 
 ## Contributing
 
@@ -82,4 +84,3 @@ Bug reports and pull requests are welcome on [GitHub](https://github.com/proudie
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
